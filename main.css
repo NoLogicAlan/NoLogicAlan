@@ -63,7 +63,8 @@ section{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #01261C;
+    background-image: url("images/background-image.png");
+    background-repeat: no-repeat;
     justify-content: center;
 }
 
@@ -161,7 +162,15 @@ section{
     margin-top: 30px
 }
 
+a:active {
+    color: #038C65;
+    text-decoration: none;
+  }
 
+  a {
+    color: #038C65;
+    text-decoration: none;
+  }
 
 .Projects{
     background-color: #01261C;
