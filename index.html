@@ -36,7 +36,7 @@
 
     <section class="main" id="NoLogicAlan">
         <div>
-            <h2>Welcome to <br><span>NoLogicAlan Website</span></h2>
+            <h2> <div id="changeText"></div><span>NoLogicAlan Website</span></h2>
             <h3>a Bot developer, Programmer.</h3>
             <a href="#AboutMe" class="main-btn">Who am i ? </a>
             <div class="social-icons">
@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Breathe Air"></button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
 
     </section>
 
@@ -156,6 +156,63 @@
             document.documentElement.scrollTop = 0;
         }
 
+        var text = [
+    'Welcome to',
+    'hello',
+    'hi ',
+    'hey',
+    "g'day",
+    'bonjour',
+    'yo',
+    'hola',
+    'morning!',
+    'hallo',
+    'ciao',
+    '&#128075;',
+    'namaste',
+    'hoi',
+    "m'athchomaroon",
+    'hiya',
+    'Привет',
+    'you got a sec?',
+    'مرحبا',
+    'greetings!',
+    'aloha',
+    'こんにちは',
+    'buenos dias',
+    'nuqneH',
+    'heya',
+    'olà',
+    'apipoulaï',
+    'j0',
+    'howdy',
+    'שלום',
+    'yooooooooooo!',
+    '你好',
+    '在吗？',
+    'you there?',
+    'fraeslis',
+    '여보세요',
+    'sul sul',
+    'quick question...',
+    'achuta',
+    'ਸਤ ਸ੍ਰੀ ਅਕਾਲ',
+    'ping',
+    'Χαίρετε',
+    'سلام',
+  ];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        var inst = setInterval(change, 1000);
+
+        function change() {
+            elem.innerHTML = text[counter];
+            counter++;
+            if (counter >= text.length) {
+                counter = 0;
+                // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+            }
+        }
 
     </script>
 </body>

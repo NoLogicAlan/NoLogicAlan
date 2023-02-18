@@ -100,7 +100,14 @@ section {
 
 }
 
-
+#changeText {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    color: green;
+    text-shadow: 2px 2px #000000;
+    font-weight: 500;
+    white-space: nowrap;
+  }
 
 .main-btn {
     font-family: 'Sacramento', cursive;
