@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
     <link rel="shortcut icon" href="images/NoLogicAlan.png">
     <title>NoLogicAlan</title>
 </head>
+
 <body>
 
     <header>
-        <a  href="#NoLogicAlan" class="logo">NoLogicAlan</a>
+        <a href="#NoLogicAlan" class="logo">NoLogicAlan</a>
         <nav class="navigation">
             <a href="#AboutMe">About Me</a>
             <a href="#Projects">Projects</a>
@@ -35,7 +37,7 @@
     <section class="main" id="NoLogicAlan">
         <div>
             <h2>Welcome to <br><span>NoLogicAlan Website</span></h2>
-            <h3>Bot developer, Programmer.</h3>
+            <h3>a Bot developer, Programmer.</h3>
             <a href="#AboutMe" class="main-btn">Who am i ? </a>
             <div class="social-icons">
                 <a href="https://www.instagram.com/1malan/" class="Icon"><i class="fa-brands fa-instagram"></i></a>
@@ -43,13 +45,15 @@
             </div>
         </div>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
     </section>
 
     <section class="AboutMe" id="AboutMe">
         <h2 class="title">About Me</h2>
 
         <p class="aboutMe-p">Hello guys ! My name is Alan, Bot developer . <br>
-            I made now over 2 complete Bots!
+            We made now over 2 complete Bots!
         </p>
 
     </section>
@@ -59,13 +63,14 @@
 
         <h2 class="title"> My Projects </h2>
 
-        <div class="content"> 
+        <div class="content">
             <div class="PrCard">
                 <div class="PrImage">
                     <img src="images/github.png">
                 </div>
                 <div class="PrInfo" style="text-align: left;">
-                    <p class="Pr-category">An advanced music bot that supports Youtube, Spotify, and Soundcloud - All the power just a click away ;).</p>
+                    <p class="Pr-category">An advanced music bot that supports Youtube, Spotify, and Soundcloud - All
+                        the power just a click away ;).</p>
                     <strong class="PrTitle">
                         <span>Remix Project </span>
                         <a href="https://github.com/remix-bot/revolt" class="Here">Here !</a>
@@ -77,7 +82,8 @@
                     <img src="images/github.png">
                 </div>
                 <div class="PrInfo" style="text-align: left;">
-                    <p class="Pr-category">Introducing ChatGPT Bot - the ultimate AI-powered chat companion for your Revolt server!.</p>
+                    <p class="Pr-category">Introducing ChatGPT Bot - the ultimate AI-powered chat companion for your
+                        Revolt server!.</p>
                     <strong class="PrTitle">
                         <span>ChatGPT Project </span>
                         <a href="https://github.com/NoLogicAlan/ChatGPT" class="Here">Here !</a>
@@ -134,6 +140,24 @@
             })
         })
 
+
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
     </script>
 </body>
+
 </html>
